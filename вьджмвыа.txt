@@ -1,0 +1,28 @@
+
+
+В модуле "calculator/init.py" определяется что при импорте доступны модули "basic" и "advanced".
+
+В модуле "calculator/basic/init.py" определяется что из модуля "addition" импортируем функцию "add", а из модуля "subtraction" импортируем функцию "subtract".
+
+В модуле "calculator/basic/addition.py" написана функция "add".
+
+В модуле "calculator/basic/subtraction.py" написана функция "subtract".
+
+В модуле "calculator/advanced/init.py" определяется что из модуля "exponentiation" импортируем функцию "power", а из модуля "root" импортируем функцию "square_root".
+
+В модуле "calculator/advanced/exponentiation.py" написана функция "power".
+
+В модуле "calculator/advanced/root.py" написана функция "square_root".
+
+
+
+
+Файлы init указывают Python что данный каталог является пакетом, определяет переменные и функции внутри.
+
+Без init "пакет" не будет пакетом, то есть Python не сможет найти и импортировать модули.
+
+
+Она определяет какие функции, классы и переменные будут импортироваться при использовании " from package import * ".
+
+Мне выдало ошибку "NameError: name 'add' is not defined". Полагаю это связано с тем, что программа не импортировала нужные функции вследствии чего не распознала первую же функцию.
+
