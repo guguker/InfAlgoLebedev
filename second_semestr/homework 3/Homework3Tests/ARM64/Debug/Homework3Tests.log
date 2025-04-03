@@ -1,0 +1,24 @@
+﻿  Homework3TestQuick.cpp
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\Homework3Quick.cpp(42,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\Homework3Quick.cpp(58,34): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3Tests\Homework3TestQuick.cpp(26,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3Tests\Homework3TestQuick.cpp(33,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3Tests\Homework3TestQuick.cpp(40,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3Tests\Homework3TestQuick.cpp(47,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3Tests\Homework3TestQuick.cpp(54,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "/Homework3TestQuick.cpp")
+  
+     Создается библиотека C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\ARM64\Debug\Homework3Tests.lib и объект C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\ARM64\Debug\Homework3Tests.exp
+  Homework3Tests.vcxproj -> C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\ARM64\Debug\Homework3Tests.dll
