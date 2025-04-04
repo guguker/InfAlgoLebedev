@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{859ACC06-5202-4BD0-AAF5-9267F622F697}|Homework3.vcxproj|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Radix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{859ACC06-5202-4BD0-AAF5-9267F622F697}|Homework3.vcxproj|solutionrelative:Homework3Radix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Homework3Radix.cpp",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Radix.cpp",
+              "RelativeDocumentMoniker": "Homework3Radix.cpp",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Radix.cpp",
+              "RelativeToolTip": "Homework3Radix.cpp",
+              "ViewState": "AgIAAD0AAAAAMjMzMzMbwFEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-04T12:37:48.932Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
