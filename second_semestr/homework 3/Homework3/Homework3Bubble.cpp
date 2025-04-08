@@ -33,7 +33,7 @@ void printFirstElements(const vector<int>& arr, int count = 20) {
 int main() {
     srand(time(0));
 
-    int N = 1000000;              // количество случайных чисел (НЕ ставь больше ~10,000 — будет долго)
+    int N = 1000000;       // количество случайных чисел
     int RANGE = 100;       // диапазон значений
 
     vector<int> arr;

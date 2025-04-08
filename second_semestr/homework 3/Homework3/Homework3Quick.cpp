@@ -79,6 +79,8 @@ int main() {
     auto duration = duration_cast<milliseconds>(end - start);
 
     cout << "Sorted array (first 20 elements):\n";
+
+    // дл€ ЌјгЋядЌќсти выводим 20 элементов
     for (int i = 0; i < 20 && i < arr.size(); ++i) {
         cout << arr[i] << " ";
     }
