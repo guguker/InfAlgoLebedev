@@ -2,52 +2,64 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <set>
+#include <chrono> // добавили chrono для замеров времени
 
 using namespace std;
+using namespace std::chrono;
 
 // так называемый пузырёк сортировка
 void bubbleSort(vector<int>& arr) {
     int n = arr.size();
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - 1; j++) {
+        bool swapped = false; // оптимизация: если ничего не поменялось — массив уже отсортирован
+        for (int j = 0; j < n - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
+                swapped = true;
             }
         }
+        if (!swapped) break;
     }
 }
 
 // выводим массив
-void printArray(const vector<int>& arr) {
-    for (int num : arr) {
-        cout << num << " ";
+void printFirstElements(const vector<int>& arr, int count = 20) {
+    for (int i = 0; i < count && i < arr.size(); ++i) {
+        cout << arr[i] << " ";
     }
-    cout << endl;
+    cout << "\n";
 }
 
 int main() {
     srand(time(0));
 
-    set<int> uniqueNumbers;
-    vector<int> arr;
+    int N = 1000000;              // количество случайных чисел (НЕ ставь больше ~10,000 — будет долго)
+    int RANGE = 100;       // диапазон значений
 
-    // массив из 20 чисел от 1 до 100
-    while (uniqueNumbers.size() < 20) {
-        int num = rand() % 100 + 1;
-        if (uniqueNumbers.insert(num).second) {
-            arr.push_back(num);
-        }
+    vector<int> arr;
+    arr.reserve(N);            // резервируем память заранее
+
+    // массив из N случайных чисел от 1 до RANGE
+    for (int i = 0; i < N; ++i) {
+        arr.push_back(rand() % RANGE + 1);
     }
 
-    cout << "Original array:\n";
-    printArray(arr);
+    cout << "Original array (first 20 elements):\n";
+    printFirstElements(arr);
+
+    // начинаем замер времени
+    auto start = high_resolution_clock::now();
 
     bubbleSort(arr);
 
-    cout << "Sorted array:\n";
-    printArray(arr);
+    // заканчиваем замер времени
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(end - start);
+
+    cout << "Sorted array (first 20 elements):\n";
+    printFirstElements(arr);
+
+    cout << "Time taken by bubbleSort: " << duration.count() << " milliseconds" << endl;
 
     return 0;
 }
-

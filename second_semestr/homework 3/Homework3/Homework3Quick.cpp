@@ -2,32 +2,43 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <set>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
-// делим массив по опорному элементу
-int partition(vector<int>& arr, int low, int high) {
-    int pivot = arr[high];
-    int i = low - 1;       
+// так называемый квиксорт который делит на больше/меньше/равно
+void quickSort3Way(vector<int>& arr, int low, int high) {
+    if (low >= high) return;
 
-    for (int j = low; j < high; j++) {
-        if (arr[j] <= pivot) {
+    // выбираем случайный pivot
+    int randomIndex = low + rand() % (high - low + 1);
+    int pivot = arr[randomIndex];
+    swap(arr[randomIndex], arr[low]);
+
+    // начинаем разделение
+    int lt = low;
+    int gt = high;
+    int i = low + 1;
+
+    while (i <= gt) {
+        if (arr[i] < pivot) {
+            swap(arr[i], arr[lt]);
             i++;
-            swap(arr[i], arr[j]);
+            lt++;
+        }
+        else if (arr[i] > pivot) {
+            swap(arr[i], arr[gt]);
+            gt--;
+        }
+        else {
+            i++;
         }
     }
-    swap(arr[i + 1], arr[high]);
-    return i + 1;
-}
 
-// так называемый квик сорт
-void quickSort(vector<int>& arr, int low, int high) {
-    if (low < high) {
-        int pivotIndex = partition(arr, low, high);
-        quickSort(arr, low, pivotIndex - 1);
-        quickSort(arr, pivotIndex + 1, high);
-    }
+    // рекурсивно сортируем < pivot и > pivot части
+    quickSort3Way(arr, low, lt - 1);
+    quickSort3Way(arr, gt + 1, high);
 }
 
 // выводим массив
@@ -41,25 +52,39 @@ void printArray(const vector<int>& arr) {
 int main() {
     srand(time(0));
 
-    set<int> uniqueNumbers;
-    vector<int> arr;
+    int N = 1000000000; // количество случайных чисел
+    int RANGE = N; // диапазон значений
 
-    // массив из 20 чисел от 1 до 100
-    while (uniqueNumbers.size() < 20) {
-        int num = rand() % 100 + 1;
-        if (uniqueNumbers.insert(num).second) {
-            arr.push_back(num);
-        }
+    vector<int> arr;
+    arr.reserve(N); // резервируем память заранее
+
+    // массив из N случайных чисел от 1 до RANGE
+    for (int i = 0; i < N; ++i) {
+        arr.push_back(rand() % RANGE + 1);
     }
 
-    cout << "Original array:\n";
-    printArray(arr);
+    cout << "Original array (first 20 elements):\n";
+    for (int i = 0; i < 20 && i < arr.size(); ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << "\n";
 
-    quickSort(arr, 0, arr.size() - 1);
+    // начинаем замер времени
+    auto start = high_resolution_clock::now();
 
-    cout << "Sorted array:\n";
-    printArray(arr);
+    quickSort3Way(arr, 0, arr.size() - 1);
+
+    // заканчиваем замер времени
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(end - start);
+
+    cout << "Sorted array (first 20 elements):\n";
+    for (int i = 0; i < 20 && i < arr.size(); ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << "\n";
+
+    cout << "Time taken by quickSort3Way: " << duration.count() << " milliseconds" << endl;
 
     return 0;
 }
-

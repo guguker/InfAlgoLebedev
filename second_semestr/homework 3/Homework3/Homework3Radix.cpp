@@ -2,11 +2,13 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <set>
+#include <chrono> // добавили chrono дл€ замеров времени
 
 using namespace std;
+using namespace std::chrono;
 
-// объедин€ем корзины :)
+// объедин€ем корзины пр€м как  –ќЋ» :)
+// если увидели это - напишите об этом в ответном письме :)
 vector<int> combineBuckets(const vector<vector<int>>& buckets) {
     vector<int> combinedArray;
     for (const auto& bucket : buckets) {
@@ -17,39 +19,28 @@ vector<int> combineBuckets(const vector<vector<int>>& buckets) {
 
 // сортируем по разр€ду
 void sortByDigit(vector<int>& arr, int digitPlace) {
-
-    // делаем корзины дл€ разр€дов
     vector<vector<int>> buckets(10);
-
-    // раскладываем по корзинам как  –ќЋ»  :)
-    // если вы увидели строчку-пасхалку выше, то скажите в ответном письме
     for (int num : arr) {
         int bucketIndex = (num / digitPlace) % 10;
         buckets[bucketIndex].push_back(num);
     }
-
-    // из корзин кладЄм в массивы
     arr = combineBuckets(buckets);
 }
 
 // так называема€ рэйдикс сортировка
 void radixSort(vector<int>& arr) {
-
-    // максимальное число?
     int maxVal = *max_element(arr.begin(), arr.end());
-
-    // начинаем с единиц и дальше идЄм по дес€ткам, сотн€м и тд
     int digitPlace = 1;
     while (maxVal / digitPlace > 0) {
         sortByDigit(arr, digitPlace);
-        digitPlace *= 10;  // переход к следующему разр€ду
+        digitPlace *= 10;
     }
 }
 
-// выводим массив
-void printArray(const vector<int>& arr) {
-    for (int num : arr) {
-        cout << num << " ";
+// выводим первые 20 элементов массива дл€ нј√ляднќ—ти
+void printFirstElements(const vector<int>& arr) {
+    for (int i = 0; i < 20 && i < arr.size(); ++i) {
+        cout << arr[i] << " ";
     }
     cout << endl;
 }
@@ -57,28 +48,31 @@ void printArray(const vector<int>& arr) {
 int main() {
     srand(time(0));
 
-    set<int> uniqueNumbers;
-    vector<int> arr;
+    int N = 1000000000;        // <- количество элементов массива
+    int RANGE = 100; // <- диапазон значений
 
-    // массив из 20 чисел от 1 до 100
-    while (uniqueNumbers.size() < 20) {
-        int num = rand() % 100 + 1;
-        if (uniqueNumbers.insert(num).second) {
-            arr.push_back(num);
-        }
+    vector<int> arr;
+    arr.reserve(N); // резервируем пам€ть заранее
+
+    // массив из N случайных чисел от 1 до RANGE
+    for (int i = 0; i < N; ++i) {
+        arr.push_back(rand() % RANGE + 1);
     }
 
-    cout << "Original array:\n";
-    printArray(arr);
+    cout << "Original array (first 20 elements):\n";
+    printFirstElements(arr);
+
+    auto start = high_resolution_clock::now();
 
     radixSort(arr);
 
-    cout << "Original array:\n";
-    printArray(arr);
+    auto end = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(end - start);
+
+    cout << "Sorted array (first 20 elements):\n";
+    printFirstElements(arr);
+
+    cout << "Time taken by radixSort: " << duration.count() << " milliseconds" << endl;
 
     return 0;
 }
-
-// blablabla
-
-
