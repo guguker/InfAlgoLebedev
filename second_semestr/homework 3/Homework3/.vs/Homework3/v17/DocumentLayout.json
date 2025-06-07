@@ -1,16 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\",
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33E859BD-0CB0-3F19-DBBE-D1B64BF55A03}|..\\Homework3Tests\\Homework3Tests.vcxproj|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3Tests\\Homework3TestRadix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{859ACC06-5202-4BD0-AAF5-9267F622F697}|Homework3.vcxproj|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Radix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{859ACC06-5202-4BD0-AAF5-9267F622F697}|Homework3.vcxproj|solutionrelative:Homework3Radix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33E859BD-0CB0-3F19-DBBE-D1B64BF55A03}|..\\Homework3Tests\\Homework3Tests.vcxproj|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3Tests\\Homework3TestBubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Quick.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,45 +13,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Homework3Radix.cpp",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Radix.cpp",
-              "RelativeDocumentMoniker": "Homework3Radix.cpp",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Radix.cpp",
-              "RelativeToolTip": "Homework3Radix.cpp",
-              "ViewState": "AgIAABIAAAAAAQAAAIApwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-08T17:22:28.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Homework3TestRadix.cpp",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3Tests\\Homework3TestRadix.cpp",
-              "RelativeDocumentMoniker": "..\\Homework3Tests\\Homework3TestRadix.cpp",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3Tests\\Homework3TestRadix.cpp",
-              "RelativeToolTip": "..\\Homework3Tests\\Homework3TestRadix.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "Homework3Quick.cpp",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Quick.cpp",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Quick.cpp*",
+              "ViewState": "AgIAACcAAABADAAAAAAhwDYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-08T17:22:27.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Homework3TestBubble.cpp",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3Tests\\Homework3TestBubble.cpp",
-              "RelativeDocumentMoniker": "..\\Homework3Tests\\Homework3TestBubble.cpp",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3Tests\\Homework3TestBubble.cpp",
-              "RelativeToolTip": "..\\Homework3Tests\\Homework3TestBubble.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-08T17:14:34.88Z",
+              "WhenOpened": "2025-06-07T08:18:09.627Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]

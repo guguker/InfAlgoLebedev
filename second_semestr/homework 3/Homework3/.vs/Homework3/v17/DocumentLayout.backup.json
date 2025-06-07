@@ -1,10 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\",
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{859ACC06-5202-4BD0-AAF5-9267F622F697}|Homework3.vcxproj|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Bubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{859ACC06-5202-4BD0-AAF5-9267F622F697}|Homework3.vcxproj|solutionrelative:Homework3Bubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Quick.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +18,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Homework3Bubble.cpp",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Bubble.cpp",
-              "RelativeDocumentMoniker": "Homework3Bubble.cpp",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Bubble.cpp",
-              "RelativeToolTip": "Homework3Bubble.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
+              "Title": "Homework3Quick.cpp",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Quick.cpp",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\LebedevProjects\\InfAlgoLebedev\\second_semestr\\homework 3\\Homework3\\Homework3Quick.cpp*",
+              "ViewState": "AgIAACcAAABADAAAAAAhwDYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-08T17:06:37.024Z",
+              "WhenOpened": "2025-06-07T08:18:09.627Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]

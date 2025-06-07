@@ -1,4 +1,4 @@
 ﻿  Homework3Quick.cpp
-C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\Homework3Quick.cpp(53,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\Homework3Quick.cpp(75,38): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-  Homework3.vcxproj -> C:\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\ARM64\Debug\Homework3.exe
+\\mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\Homework3Quick.cpp(53,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+\\mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\Homework3Quick.cpp(75,38): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Homework3.vcxproj -> \\Mac\Home\Documents\LebedevProjects\InfAlgoLebedev\second_semestr\homework 3\Homework3\ARM64\Debug\Homework3.exe
